@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Formatter</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 300px; /* This gives the popup a defined size */
+            padding: 10px;
+        }
+        textarea {
+            width: 95%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            min-height: 100px;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        #status {
+            font-size: 0.9em;
+            color: grey;
+            margin-top: 5px;
+            min-height: 1.2em; /* Reserve space */
+        }
+        .hidden {
+             display: none;
+        }
+    </style>
+</head>
+<body>
+    <h4>Generate Message</h4>
+    <button id="convertBtn">CONVERT</button>
+    <p id="status">Loading profile data...</p>
+    <textarea id="output" readonly placeholder="Formatted message will appear here..."></textarea>
+    <button id="copyBtn" class="hidden">Copy Text</button>
+
+    <script src="popup.js"></script> {/* Ensure this is correct and at the end */}
+</body>
+</html>
